@@ -1,23 +1,18 @@
-import React, {Component} from 'react';
-import { PROFILE_PIC_URL_PREFIX, TEAM_LOGO_URL_PREFIX } from '../constants';
+import React from 'react';
+import { PROFILE_PIC_URL_PREFIX, TEAM_PIC_URL_PREFIX } from '../constants';
 
-export class Profile extends Component {
+export class Profile extends React.Component {
     render() {
-        console.log(this.props);
         const {
             teamAbbreviation,
-            playerName,
             teamCity,
             teamName,
+            playerName,
             height,
             weight,
             playerId,
-            pts,
-            reb,
-            ast,
-            pie
+            pts, reb, ast, pie,
         } = this.props.playerInfo;
-
         return (
             <div className="profile">
                 <div className="profile-entry player-name">{`${playerName}`}</div>
@@ -32,8 +27,8 @@ export class Profile extends Component {
                 </div>
                 <img
                     className="team-logo"
-                    alt="team logo"
-                    src={`${TEAM_LOGO_URL_PREFIX}/${teamAbbreviation}_logo.svg`}
+                    src={`${TEAM_PIC_URL_PREFIX}/${teamAbbreviation}_logo.svg`}
+                    alt="Team"
                 />
                 <div className="profile-entry">
                     <div className="profile-entry-left">Height</div>

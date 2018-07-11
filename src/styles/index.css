@@ -2,6 +2,9 @@
 @import "TopNavBar.css";
 @import "Main.css";
 @import "Profile.css";
+@import "~antd/dist/antd.css";
+@import "ShotChart.css";
+@import "DataViewContainer.css";
 
 body {
   margin: 0;

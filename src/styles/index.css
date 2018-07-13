@@ -5,6 +5,8 @@
 @import "~antd/dist/antd.css";
 @import "ShotChart.css";
 @import "DataViewContainer.css";
+@import "SearchBar.css";
+
 
 body {
   margin: 0;
